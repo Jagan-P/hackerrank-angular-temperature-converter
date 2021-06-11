@@ -1,7 +1,7 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { TemperatureConverter } from './temperatureConverter/temperatureConverter.component';
@@ -16,7 +16,6 @@ import {RouterTestingModule} from '@angular/router/testing';
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule,
     RouterTestingModule,
     RouterModule.forRoot([
       { path:'', component: TemperatureConverter }
